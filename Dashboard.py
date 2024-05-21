@@ -11,7 +11,6 @@ import matplotlib.ticker as ticker
 import os
 from statsmodels.tsa.seasonal import seasonal_decompose
 from matplotlib.axis import Axis 
-from sqlalchemy import create_engine
 from sklearn.inspection import permutation_importance
 from sklearn.neural_network import MLPRegressor
 from sklearn.model_selection import train_test_split, cross_val_score
@@ -150,8 +149,6 @@ st.divider()
 st.title('Matriz de correlação')
 st.write ('Esta é a matriz de correlação das variáveis que foram selecionadas, tratadas e transformadas em novas variáveis. Ela evidencia as interações entre todas as variáveis, proporcionando uma representação estatística das associações entre os diferentes atributos. Essa visualização é fundamental para identificar padrões e insights cruciais no conjunto de dados, contribuindo para a compreensão das relações entre as variáveis e facilitando o processo de análise e tomada de decisão.')
 #st.image(r'C:\Users\ofici\OneDrive\Documentos\Study\Data_Science_Projects\Studies\Portifolio\dashboard\st.image().png',caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 # numeric_df = df.select_dtypes(include='number')
 
